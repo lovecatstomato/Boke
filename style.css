@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../img/beijing2.jpg);
+  height: 100vh;
+}
+
+.zhuy {
+  box-shadow: 0 0 0 9999em rgb(99, 104, 128);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 90vh;
+  height: 90vh;
+}
+
+.zhuy:hover {
+  transition: all 1s ease-out;
+  transform: scale(1.1);
+}
+
+.biaot:hover {
+  transition: all 1s ease-out;
+  transform: scale(1.1);
+}
+
+.biaot {
+  text-align: center;
+  color: #60667E;
+  font-size: 3vh;
+  font-weight: bold;
+}
