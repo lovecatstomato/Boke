@@ -3,7 +3,103 @@
     padding: 0;
 }
 
+#add {
+    display: flex;
+    justify-content: center;
+}
+
+/* 头像 */
+.touxing {
+    border-radius: 50%;
+    margin: 10% 25%;
+    width: 100px;
+    height: 100px;
+}
+
+/* 文字 */
+.wenzhi {
+    display: grid;
+    justify-items: center;
+}
+
+.wenzhi span {
+    margin: 1vh 0vh 1vh 0vh;
+}
+
+.wenzhi span:nth-child(1) {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.wenzhi span:nth-child(3) {
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+/* 主体背景 */
 body {
+    list-style-type: none;
     background: url(../img/beijing2.jpg);
     height: 100vh;
+}
+
+/* 右边框架 */
+.youbian_yangshi {
+    margin: 2vh 1vh;
+    /* height: 100px; */
+    width: 800px;
+    background: rgb(255, 255, 255);
+    border-radius: 8px;
+}
+
+
+/* 左边框架 */
+.zuobian_yangshi {
+    margin: 2vh 1vh;
+    height: 100%;
+    width: 180px;
+    background: rgb(255, 255, 255);
+    border-radius: 8px;
+}
+
+/* 文本框架 */
+.wenbkuangjia{
+    display: grid;
+    background: rgb(249, 243, 243);
+    border-radius: 8px;
+    margin: 18px;
+    padding: 10px;
+}
+
+
+.wenbkuangjia:hover{
+   
+
+}
+
+.wenbkuangjia h2{
+    margin: 10px;
+}
+
+.wenbkuangjia span:nth-child(2){
+    margin: 10px;
+}
+
+.wenbkuangjia span:nth-child(3){
+    margin: 10px;
+    text-align: end;
+}
+
+/* 媒体查询，当视口宽度小于600px时应用 */
+@media (max-width: 1000px) {
+    /* 右边框架 */
+    .youbian_yangshi {
+        width: 100%;
+    }
+
+    /* 左边框架 */
+    .zuobian_yangshi {
+        display: none;
+    }
 }
