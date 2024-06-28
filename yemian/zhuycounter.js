@@ -75,3 +75,43 @@ export function chuchijiaz() {
 
     currentPage++; // 更新当前页码
 }
+
+// script.js
+export function yingyue() {
+    const BGM = '/BGM/nizou.mp3';  // 设置音频文件路径
+    const audioPlayer = document.getElementById('audioPlayer');
+    const audioSource = document.getElementById('audioSource');
+    const playPauseButton = document.getElementById('playPauseButton');
+    console.log(audioSource, 'audioSource');
+
+    if (audioSource) {
+        audioSource.src = BGM;  // 动态设置音频文件路径
+        audioPlayer.load();  // 加载音频文件
+
+        playPauseButton.addEventListener('click', () => {
+            if (audioPlayer.paused) {
+                audioPlayer.play();
+                playPauseButton.textContent = '我走';
+            } else {
+                audioPlayer.pause();
+                playPauseButton.textContent = '你走';
+            }
+        });
+    }
+}
+
+export function gunlun() {
+    document.addEventListener('DOMContentLoaded', () => {
+        const hero = document.getElementById('zhuhti_beijing');
+    
+        window.addEventListener('scroll', () => {
+            const scrollPosition = window.scrollY;
+    
+            if (scrollPosition > 50) {
+                hero.classList.add('fade-out');
+            } else {
+                hero.classList.remove('fade-out');
+            }
+        });
+    });
+}

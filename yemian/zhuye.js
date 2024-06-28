@@ -1,5 +1,5 @@
 import './zhuye.css';
-import { duqvmdwenjian, duqvmdname, chuchijiaz} from './zhuycounter'
+import { duqvmdwenjian, duqvmdname, chuchijiaz, yingyue, gunlun } from './zhuycounter'
 
 duqvmdwenjian().then(count => {
     let shuliang = count
@@ -12,6 +12,12 @@ duqvmdwenjian().then(count => {
             <span>铭记</span>
             <span>2016.6.6</span>
         </div>
+        <div class="music-player">
+            <button id="playPauseButton" class="playPauseButton">你走</button>
+            <video id="audioPlayer" style="display:none;">
+                <source id="audioSource" type="video/mp4">
+            </video>
+        </div>
     </div>
     <div id="youbian" class="youbian_yangshi">
         <div id="wenzhang" class="wenzhang">
@@ -21,10 +27,13 @@ duqvmdwenjian().then(count => {
             下拉加载更多
         </div>
     </div>
-`
-    // yingyue()
+`;
+    yingyue();
 })
 duqvmdname()
+
+gunlun();
+
 
 // 监听滚动事件，加载更多数据
 window.addEventListener('scroll', () => {
