@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 主体背景 */
+body {
+    background: url(../img/beijing2.jpg);
+    height: 100vh;
+}
+
+/* 主框架样式 */
+.zhukuangjia_kuangjia{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+/* 按钮样式 */
+.tuic_anniu{
+    position: fixed;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(45deg, #6a5acd, #836fff);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* 按钮鼠标悬浮的时候 */
+.tuic_anniu:hover{
+    background: linear-gradient(45deg, #836fff, #6a5acd);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+/* 按钮鼠标点击的时候 */
+.tuic_anniu:active {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(0);
+}
+
+/* 右边框架 */
+.youbian_yangshi {
+    margin: 10px;
+    width: 800px;
+    background: rgb(255, 255, 255);
+    border-radius: 8px;
+}
+
+/* 定义 Markdown 内容的全局样式 */
+.youbian_yangshi {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+/* 标题样式 */
+.youbian_yangshi h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.youbian_yangshi h2 {
+    font-size: 1.75em;
+    margin-bottom: 0.5em;
+}
+
+/* 段落样式 */
+.youbian_yangshi p {
+    margin-bottom: 1em;
+}
+
+/* 链接样式 */
+.youbian_yangshi a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.youbian_yangshi a:hover {
+    text-decoration: underline;
+}
+
+/* 列表样式 */
+.youbian_yangshi ul,
+.youbian_yangshi ol {
+    margin: 1em 0;
+    padding-left: 20px;
+}
+
+.youbian_yangshi ul li,
+.youbian_yangshi ol li {
+    margin-bottom: 0.5em;
+}
+
+#snowCanvas {
+    position: fixed; /* Fixed positioning to cover entire screen */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Put canvas behind other content */
+}
+
+#app {
+    position: relative;
+    z-index: 1; /* Ensure content appears above canvas */
+    padding: 20px;
+    /* color: white; Make content readable against dark background */
+}

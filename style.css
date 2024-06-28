@@ -37,3 +37,19 @@ body {
   font-size: 3vh;
   font-weight: bold;
 }
+
+#snowCanvas {
+  position: fixed; /* Fixed positioning to cover entire screen */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Put canvas behind other content */
+}
+
+#app {
+  position: relative;
+  z-index: 1; /* Ensure content appears above canvas */
+  padding: 20px;
+  /* color: white; Make content readable against dark background */
+}

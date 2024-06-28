@@ -1,7 +1,5 @@
 import './zhuye.css';
-import { duqvmdwenjian,duqvmdname } from './zhuycounter'
-// 读取md文件库
-import { marked } from 'marked';
+import { duqvmdwenjian, duqvmdname, chuchijiaz} from './zhuycounter'
 
 duqvmdwenjian().then(count => {
     let shuliang = count
@@ -19,20 +17,22 @@ duqvmdwenjian().then(count => {
         <div id="wenzhang" class="wenzhang">
             
         </div>
+        <div id="loadMore" class="loadMore">
+            下拉加载更多
+        </div>
     </div>
 `
-
+    // yingyue()
 })
-
 duqvmdname()
 
-// fetch(markdownFilePath)
-//     .then(response => response.text())
-//     .then(markdownText => {
-//         console.log(markdownText);
-//         // const html = marked(markdownText);
-//         // // 将 HTML 插入到 DOM 中
-//         // document.getElementById('wenzhang').innerHTML = html;
-//     })
+// 监听滚动事件，加载更多数据
+window.addEventListener('scroll', () => {
+    // 不是监听高度而是数据才对
+    if (youbian.scrollTop + youbian.clientHeight >= youbian.scrollHeight) {
+        // document.getElementById('loadMore').style.display = 'block';
+        chuchijiaz();
+    }
+});
 
 

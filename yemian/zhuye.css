@@ -39,7 +39,6 @@
 
 /* 主体背景 */
 body {
-    list-style-type: none;
     background: url(../img/beijing2.jpg);
     height: 100vh;
 }
@@ -64,35 +63,47 @@ body {
 }
 
 /* 文本框架 */
-.wenbkuangjia{
+.wenbkuangjia {
     display: grid;
     background: rgb(249, 243, 243);
-    border-radius: 8px;
+    border-radius: 10px;
     margin: 18px;
     padding: 10px;
+    transition: transform 0.3s ease-in-out;
+    /* 添加过渡效果，使放大更加平滑 */
 }
 
 
-.wenbkuangjia:hover{
-   
-
+.wenbkuangjia:hover {
+    transform: scale(1.1);
+    /* 当鼠标悬停时，元素放大到原来的1.1倍 */
+    box-shadow: 0 2px 4px 2px #d6e0e2;
 }
 
-.wenbkuangjia h2{
+.wenbkuangjia h2 {
     margin: 10px;
 }
 
-.wenbkuangjia span:nth-child(2){
+.wenbkuangjia span:nth-child(2) {
     margin: 10px;
 }
 
-.wenbkuangjia span:nth-child(3){
+.wenbkuangjia span:nth-child(3) {
     margin: 10px;
     text-align: end;
 }
 
+.loadMore {
+    display: none;
+    text-align: center;
+    /* padding: 10px; */
+    margin: 10px;
+    font-weight: bold;
+}
+
 /* 媒体查询，当视口宽度小于600px时应用 */
 @media (max-width: 1000px) {
+
     /* 右边框架 */
     .youbian_yangshi {
         width: 100%;
