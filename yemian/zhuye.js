@@ -32,7 +32,7 @@ duqvmdwenjian().then(count => {
 })
 duqvmdname()
 
-gunlun();
+// gunlun();
 
 
 // 监听滚动事件，加载更多数据
