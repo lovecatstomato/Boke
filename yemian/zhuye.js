@@ -32,15 +32,17 @@ duqvmdwenjian().then(count => {
 })
 duqvmdname()
 
-gunlun();
+// gunlun();
 
 
 // 监听滚动事件，加载更多数据
 window.addEventListener('scroll', () => {
     // 不是监听高度而是数据才对
+    console.log('加载',scrollTop,clientHeight);
+
     if (youbian.scrollTop + youbian.clientHeight >= youbian.scrollHeight) {
         // document.getElementById('loadMore').style.display = 'block';
-        chuchijiaz();
+        // chuchijiaz();
     }
 });
 

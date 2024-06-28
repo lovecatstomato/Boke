@@ -17,7 +17,7 @@ export function duqvmdwenjian() {
 
 let allData = []; // 存储所有文章数据
 let currentPage = 1; // 当前页码
-const jiazaigeshu = 5
+const jiazaigeshu = 50
 
 // 读取json文件内容名称
 export function duqvmdname() {
@@ -66,12 +66,12 @@ export function chuchijiaz() {
         listItem.appendChild(listDate);// 日期
     });
 
-    // 显示或隐藏“加载更多”按钮
-    if (end < allData.length) {
-        document.getElementById('loadMore').style.display = 'block';
-    } else {
-        document.getElementById('loadMore').style.display = 'none';
-    }
+    // // 显示或隐藏“加载更多”按钮
+    // if (end < allData.length) {
+    //     document.getElementById('loadMore').style.display = 'block';
+    // } else {
+    //     document.getElementById('loadMore').style.display = 'none';
+    // }
 
     currentPage++; // 更新当前页码
 }
@@ -103,10 +103,10 @@ export function yingyue() {
 export function gunlun() {
     document.addEventListener('DOMContentLoaded', () => {
         const hero = document.getElementById('zhuhti_beijing');
-    
+        
         window.addEventListener('scroll', () => {
             const scrollPosition = window.scrollY;
-    
+            
             if (scrollPosition > 50) {
                 hero.classList.add('fade-out');
             } else {
