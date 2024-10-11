@@ -15,9 +15,10 @@ export function duqvmdwenjian() {
     })
 }
 
-let allData = []; // 存储所有文章数据
+export let allData = []; // 存储所有文章数据
 let currentPage = 1; // 当前页码
-const jiazaigeshu = 50
+const jiazaigeshu = 5 // 要显示的文章数量
+export let allDatas = [] //更新后的文章
 
 // 读取json文件内容名称
 export function duqvmdname() {
@@ -40,7 +41,6 @@ export function chuchijiaz() {
     const start = (currentPage - 1) * jiazaigeshu;
     const end = start + jiazaigeshu;
     const items = allData.slice(start, end);
-
 
     let listElement = document.getElementById("wenzhang");
     items.forEach(item => {
@@ -66,13 +66,13 @@ export function chuchijiaz() {
         listItem.appendChild(listDate);// 日期
     });
 
-    // // 显示或隐藏“加载更多”按钮
-    // if (end < allData.length) {
-    //     document.getElementById('loadMore').style.display = 'block';
-    // } else {
-    //     document.getElementById('loadMore').style.display = 'none';
-    // }
-
+    // 显示或隐藏“加载更多”按钮
+    if (end < allData.length) {
+        document.getElementById('loadMore').style.display = 'block';
+    } else {
+        document.getElementById('loadMore').innerHTML = '没有更多的内容了';
+    } 
+    allDatas = (currentPage - 1) * jiazaigeshu + items.length;
     currentPage++; // 更新当前页码
 }
 
@@ -100,18 +100,18 @@ export function yingyue() {
     }
 }
 
-export function gunlun() {
-    document.addEventListener('DOMContentLoaded', () => {
-        const hero = document.getElementById('zhuhti_beijing');
+// export function gunlun() {
+//     document.addEventListener('DOMContentLoaded', () => {
+//         const hero = document.getElementById('zhuhti_beijing');
         
-        window.addEventListener('scroll', () => {
-            const scrollPosition = window.scrollY;
+//         window.addEventListener('scroll', () => {
+//             const scrollPosition = window.scrollY;
             
-            if (scrollPosition > 50) {
-                hero.classList.add('fade-out');
-            } else {
-                hero.classList.remove('fade-out');
-            }
-        });
-    });
-}
+//             if (scrollPosition > 50) {
+//                 hero.classList.add('fade-out');
+//             } else {
+//                 hero.classList.remove('fade-out');
+//             }
+//         });
+//     });
+// }

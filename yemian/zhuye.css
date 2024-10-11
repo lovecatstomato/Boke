@@ -6,6 +6,11 @@
 #add {
     display: flex;
     justify-content: center;
+    /* position: relative;
+    z-index: 1;
+    background: white; */
+    /* padding-top: 100px; */
+    /*  */
 }
 
 /* 头像 */
@@ -40,7 +45,7 @@
 /* 主体背景 */
 body {
     font-family: Arial, sans-serif;
-    /* height: 200vh; */
+    height: 200vh;
     font-size: 18px;
     background: url(../img/beijing2.jpg);
     /* 确保页面足够长以进行滚动 */
@@ -169,31 +174,37 @@ body {
     }
 }
 
-.zhuping_kuangjia{
+/* 卡屏废案属性 */
+/* .zhuping_kuangjia{
     width: 100%;  
     height: 100vh;
-    scroll-snap-type: y mandatory; /* 设置为垂直方向 */
-    overflow-x: hidden; /* 禁止水平滚动 */
-    overflow-y: scroll; /* 允许垂直滚动 */
+    scroll-snap-type: y mandatory; 设置为垂直方向
+    overflow-x: hidden; 禁止水平滚动
+    overflow-y: scroll; 允许垂直滚动
 }
 
 .zhuping_kuangjia div{
     scroll-snap-align: start;
-}
+} */
 
 /* 卡屏屏幕 */
 .container {
+    color: #a69797;
     width: 100%;
     height: 100vh;
     background-image: url('/img/zhuti.jpg');
     background-repeat: round;
+    display: flex;
+    justify-content: center;
 }
 
-/* 卡屏文字标题 */
+/* 卡屏屏幕文字对齐 */
 .container_wenzhi{
-    color: #a69797;
-    font-size: 1.5em;
+    font-style: oblique;
+    text-align: center;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row-reverse;
+    align-content: center;
+    justify-content: flex-end;
+    width: 50%;
 }

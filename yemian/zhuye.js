@@ -1,5 +1,5 @@
 import './zhuye.css';
-import { duqvmdwenjian, duqvmdname, chuchijiaz, yingyue, gunlun } from './zhuycounter'
+import { duqvmdwenjian, duqvmdname, chuchijiaz, yingyue, allDatas, allData } from './zhuycounter'
 
 duqvmdwenjian().then(count => {
     let shuliang = count
@@ -35,15 +35,36 @@ duqvmdname()
 // gunlun();
 
 
-// 监听滚动事件，加载更多数据
 window.addEventListener('scroll', () => {
-    // 不是监听高度而是数据才对
-    console.log('加载',scrollTop,clientHeight);
+    let tinzi = false //文章加载
+    // 换成按钮的加载方式，这样就不用监听滚动事件，妨碍数据加载
+    if (allDatas < allData.length) {
+        const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        const clientHeight = document.documentElement.clientHeight || document.body.clientHeight;
+        const scrollHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
+        console.log(allDatas, allData.length);
 
-    if (youbian.scrollTop + youbian.clientHeight >= youbian.scrollHeight) {
-        // document.getElementById('loadMore').style.display = 'block';
-        // chuchijiaz();
+        console.log('加载', scrollTop, clientHeight, scrollHeight);
+        if (scrollTop + clientHeight >= scrollHeight - 1) {
+            // console.log(1);
+    
+            if (!tinzi) {
+                // console.log(2);
+    
+                tinzi = true
+                if (allDatas < allData.length) {
+                    // 当滚动到页面底部时，执行加载更多数据的操作  
+                    document.getElementById('loadMore').style.display = 'block';
+                    chuchijiaz();
+                } else {
+                    tinzi = false
+                }
+            }
+            // tinzi = false
+        }
     }
+
 });
+
 
 
