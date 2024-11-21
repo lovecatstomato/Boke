@@ -11,6 +11,14 @@ duqvmdwenjian().then(count => {
             <span>${shuliang}篇</span>
             <span>铭记</span>
             <span>2016.6.6</span>
+            <span class="shejiao_tubiao">
+                <a href="">
+                    <img src="../img/tubiao/github.png">
+                </a>
+                <a href="https://gitee.com/lovecatstomato">
+                    <img src="../img/tubiao/gitee.png">
+                </a>
+            </span>
         </div>
         <div class="music-player">
             <button id="playPauseButton" class="playPauseButton">你走</button>

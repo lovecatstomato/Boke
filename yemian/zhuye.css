@@ -160,8 +160,6 @@ body {
     outline: none;
 }
 
-<<<<<<< HEAD
-=======
 /* 主题背景 */
 /* .zhuhti_beijing {
     position: fixed;
@@ -181,7 +179,6 @@ body {
     transform: scale(1.1);
 } */
 
->>>>>>> 8e6e020850e01e1baaa9a35bca59228d56dff549
 /* 媒体查询，当视口宽度小于600px时应用 */
 @media (max-width: 1000px) {
 
@@ -229,4 +226,10 @@ body {
     align-content: center;
     justify-content: flex-end;
     width: 50%;
+}
+
+/* 社交图标 */
+.shejiao_tubiao img{
+    height: 2rem;
+    width: 2rem;
 }
