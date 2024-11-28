@@ -5,7 +5,7 @@
 
 /* 主体背景 */
 body {
-    background: url(../img/beijing2.jpg);
+    background-color: #4444;
     height: 100vh;
 }
 
@@ -44,22 +44,22 @@ body {
     transform: translateY(0);
 }
 
-/* 右边框架 */
+/* 定义 Markdown 内容的全局样式 */
 .youbian_yangshi {
     margin: 10px;
     width: 800px;
     background: rgb(255, 255, 255);
     border-radius: 8px;
-}
-
-/* 定义 Markdown 内容的全局样式 */
-.youbian_yangshi {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     padding: 20px;
     background-color: #f9f9f9;
     border-radius: 5px;
 }
+
+/* .youbian_yangshi {
+    
+} */
 
 /* 标题样式 */
 .youbian_yangshi h1 {
@@ -114,3 +114,12 @@ body {
     padding: 20px;
     /* color: white; Make content readable against dark background */
 }
+
+/* 媒体查询，当视口宽度小于600px时应用 */
+@media (max-width: 1000px) {
+
+    .youbian_yangshi {
+        width: 100%;
+    }
+    
+  }

@@ -7,10 +7,8 @@ duqvmdwenjian().then(count => {
     <div id="zuobian" class="zuobian_yangshi">
         <img class="touxing" src="../img/touxing.jpg">
         <div class="wenzhi">
-            <span>文章篇幅</span>
-            <span>${shuliang}篇</span>
-            <span>铭记</span>
-            <span>2016.6.6</span>
+            <span>文章篇幅：${shuliang}篇</span>
+            <span>铭记：2016.6.6</span>
             <span class="shejiao_tubiao">
                 <a href="">
                     <img src="../img/tubiao/github.png">
