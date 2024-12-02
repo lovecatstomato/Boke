@@ -1,5 +1,12 @@
 import './zhuye.css';
-import { duqvmdwenjian, duqvmdname, chuchijiaz, yingyue, allDatas, allData } from './zhuycounter'
+import {
+    duqvmdwenjian,
+    duqvmdname,
+    chuchijiaz,
+    yingyue,
+    allDatas,
+    allData
+} from './zhuycounter'
 
 duqvmdwenjian().then(count => {
     let shuliang = count
@@ -9,21 +16,39 @@ duqvmdwenjian().then(count => {
         <div class="wenzhi">
             <span>文章篇幅：${shuliang}篇</span>
             <span>铭记：2016.6.6</span>
-            <span class="shejiao_tubiao">
-                <a href="">
-                    <img src="../img/tubiao/github.png">
+        </div>
+        <div class="shejiao">
+            <div>
+                <a href="https://github.com/lovecatstomato">
+                    <img border="0" class="shejiao_tubiao" src="../img/tubiao/github.png">
                 </a>
+            </div>
+            <div>
                 <a href="https://gitee.com/lovecatstomato">
-                    <img src="../img/tubiao/gitee.png">
-                </a>
-            </span>
+                    <img border="0" class="shejiao_tubiao" src="../img/tubiao/gitee.png">
+                </a>  
+            </div>
+            <div>
+                <a href="https://space.bilibili.com/269891432?spm_id_from=333.337.0.0">
+                    <img border="0" class="shejiao_tubiao" src="../img/tubiao/bilibili.png">
+                </a>  
+            </div>
         </div>
-        <div class="music-player">
-            <button id="playPauseButton" class="playPauseButton">你走</button>
-            <video id="audioPlayer" style="display:none;">
-                <source id="audioSource" type="video/mp4">
-            </video>
+        <div class="yinyue_zhuti">
+            <div>
+                <img class="yinyue_touxiang" src="../img/yinyue/zhuti.jpg">
+            </div>
+            <div>
+                <img class="yinyue_tubiao" src="../img/yinyue/shagnyiq.png">
+            </div>
+            <div>
+                <img class="yinyue_tubiao" src="../img/yinyue/zhanting.png">
+            </div>
+            <div>
+                <img class="yinyue_tubiao" src="../img/yinyue/xiayiq.png">
+            </div>
         </div>
+        
     </div>
     <div id="youbian" class="youbian_yangshi">
         <div id="wenzhang" class="wenzhang">
@@ -39,7 +64,12 @@ duqvmdwenjian().then(count => {
 duqvmdname()
 
 // gunlun();
-
+{/* <div class="music-player">
+            <button id="playPauseButton" class="playPauseButton">你走</button>
+            <video id="audioPlayer" style="display:none;">
+                <source id="audioSource" type="video/mp4">
+            </video>
+        </div> */}
 
 window.addEventListener('scroll', () => {
     let tinzi = false //文章加载
@@ -53,10 +83,10 @@ window.addEventListener('scroll', () => {
         console.log('加载', scrollTop, clientHeight, scrollHeight);
         if (scrollTop + clientHeight >= scrollHeight - 1) {
             // console.log(1);
-    
+
             if (!tinzi) {
                 // console.log(2);
-    
+
                 tinzi = true
                 if (allDatas < allData.length) {
                     // 当滚动到页面底部时，执行加载更多数据的操作  
@@ -71,6 +101,3 @@ window.addEventListener('scroll', () => {
     }
 
 });
-
-
-

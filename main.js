@@ -2,7 +2,7 @@ import './style.css'
 import { setupCounter } from './counter.js'
 
 document.querySelector('#app').innerHTML = `
-    <div class="zhuy">
+    <div class="zhuy" id="zhuy_tiaozhuan">
         <div class="biaot" id="baiot">
             WELCOME TO THE PLANET
         </div>
@@ -12,4 +12,4 @@ document.querySelector('#app').innerHTML = `
     </div>
 `
 
-setupCounter(document.querySelector('#baiot'))
+setupCounter(document.querySelector('#zhuy_tiaozhuan'))

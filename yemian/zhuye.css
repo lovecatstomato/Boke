@@ -17,9 +17,9 @@
 /* 头像 */
 .touxing {
     border-radius: 50%;
-    margin: 10% 25%;
-    width: 100px;
-    height: 100px;
+    margin: 10% 30%;
+    width: 4.8em;
+    height: 4.8em;
 }
 
 /* 文字 */
@@ -48,7 +48,7 @@ body {
     font-family: Arial, sans-serif;
     height: 200vh;
     font-size: 18px;
-    background-color: #4444;
+    background: #4442;
     /* background: url(../img/beijing2.jpg); */
     /* 确保页面足够长以进行滚动 */
     /* overflow-x: hidden; */
@@ -60,7 +60,7 @@ body {
     margin: 2vh 1vh;
     /* height: 100px; */
     width: 42em;
-    background: rgb(255, 255, 255);
+    background: #4442;
     border-radius: 8px;
 }
 
@@ -70,14 +70,14 @@ body {
     margin: 2vh 1vh;
     height: 100%;
     width: 12em;
-    background: rgb(255, 255, 255);
+    background: #4442;
     border-radius: 8px;
 }
 
 /* 文本框架 */
 .wenbkuangjia {
     display: grid;
-    background: rgb(249, 243, 243);
+    background: #4442;
     border-radius: 10px;
     margin: 18px;
     padding: 10px;
@@ -89,7 +89,7 @@ body {
 .wenbkuangjia:hover {
     transform: scale(1.1);
     /* 当鼠标悬停时，元素放大到原来的1.1倍 */
-    box-shadow: 0 2px 4px 2px #d6e0e2;
+    box-shadow: 0 2px 4px 2px #4442;
 }
 
 .wenbkuangjia h2 {
@@ -220,7 +220,7 @@ body {
 }
 
 /* 卡屏屏幕文字对齐 */
-.container_wenzhi{
+.container_wenzhi {
     font-style: oblique;
     text-align: center;
     display: flex;
@@ -230,12 +230,55 @@ body {
     width: 50%;
 }
 
+/* 社交主要框架 */
+.shejiao{
+    display: flex;
+    justify-content: center;
+}
+
+.shejiao div{
+    margin: 0.2rem;
+}
+
 /* 社交图标 */
-.shejiao_tubiao img{
+.shejiao_tubiao{
     height: 2rem;
     width: 2rem;
 }
 
-.shejiao_tubiao a{
-    margin: 1px;
+/* 音乐主框架 */
+.yinyue_zhuti{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #FFFEFF;
+    border-radius: 18px;
+    margin: 20px 10px;
 }
+
+/* 音乐头像 */
+.yinyue_touxiang{
+    border-radius: 50%;
+    height: 2.8em;
+    width: 2.8em;
+    position: relative;
+    top: -20px;
+}
+
+/* 音乐按钮 */
+.yinyue_tubiao{
+    height: 1.4em;
+    width: 1.4em;
+}
+
+/* 动画 */
+@keyframes circle {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
