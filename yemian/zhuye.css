@@ -231,44 +231,45 @@ body {
 }
 
 /* 社交主要框架 */
-.shejiao{
+.shejiao {
     display: flex;
     justify-content: center;
 }
 
-.shejiao div{
+.shejiao div {
     margin: 0.2rem;
 }
 
 /* 社交图标 */
-.shejiao_tubiao{
+.shejiao_tubiao {
     height: 2rem;
     width: 2rem;
 }
 
 /* 音乐主框架 */
-.yinyue_zhuti{
+.yinyue_zhuti {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
     background: #FFFEFF;
     border-radius: 18px;
     margin: 20px 10px;
+    align-items: flex-end;
+    justify-content: space-evenly;
 }
 
 /* 音乐头像 */
-.yinyue_touxiang{
+.yinyue_touxiang {
     border-radius: 50%;
-    height: 2.8em;
-    width: 2.8em;
+    height: 3.4em;
+    width: 3.4em;
     position: relative;
-    top: -20px;
+    box-shadow: 0 0 0 6px #fff;
+    top: -12px;
 }
 
 /* 音乐按钮 */
-.yinyue_tubiao{
-    height: 1.4em;
-    width: 1.4em;
+.yinyue_tubiao {
+    height: 1.8em;
+    width: 1.8em;
 }
 
 /* 动画 */
@@ -281,4 +282,3 @@ body {
         transform: rotate(360deg);
     }
 }
-

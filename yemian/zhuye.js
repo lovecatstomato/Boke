@@ -36,16 +36,12 @@ duqvmdwenjian().then(count => {
         </div>
         <div class="yinyue_zhuti">
             <div>
-                <img class="yinyue_touxiang" src="../img/yinyue/zhuti.jpg">
+                <img class="yinyue_touxiang" src="../img/yinyue/zhuti.jpg" alt="Music Theme">
             </div>
-            <div>
-                <img class="yinyue_tubiao" src="../img/yinyue/shagnyiq.png">
-            </div>
-            <div>
-                <img class="yinyue_tubiao" src="../img/yinyue/zhanting.png">
-            </div>
-            <div>
-                <img class="yinyue_tubiao" src="../img/yinyue/xiayiq.png">
+            <div class="controls">
+                <img class="yinyue_tubiao prev" src="../img/yinyue/shangyiq.png" alt="Previous">
+                <img class="yinyue_tubiao play-pause" src="../img/yinyue/zhanting.png" alt="Play/Pause">
+                <img class="yinyue_tubiao next" src="../img/yinyue/xiayiq.png" alt="Next">
             </div>
         </div>
         
@@ -62,14 +58,6 @@ duqvmdwenjian().then(count => {
     yingyue();
 })
 duqvmdname()
-
-// gunlun();
-{/* <div class="music-player">
-            <button id="playPauseButton" class="playPauseButton">你走</button>
-            <video id="audioPlayer" style="display:none;">
-                <source id="audioSource" type="video/mp4">
-            </video>
-        </div> */}
 
 window.addEventListener('scroll', () => {
     let tinzi = false //文章加载

@@ -1,7 +1,7 @@
 import { marked } from 'marked';
 
 const markdownFilePath = '/biji/bijiweiz.json'; // 注意这里的路径可能是相对于构建后的根目录
-
+const yinyue_diz = '/BGM/yinyuediz.json';
 
 // 读取json文件篇数
 export function duqvmdwenjian() {
@@ -78,26 +78,8 @@ export function chuchijiaz() {
 
 // script.js
 export function yingyue() {
-    const BGM = '/BGM/nizou.mp3';  // 设置音频文件路径
-    const audioPlayer = document.getElementById('audioPlayer');
-    const audioSource = document.getElementById('audioSource');
-    const playPauseButton = document.getElementById('playPauseButton');
-    console.log(audioSource, 'audioSource');
-
-    if (audioSource) {
-        audioSource.src = BGM;  // 动态设置音频文件路径
-        audioPlayer.load();  // 加载音频文件
-
-        playPauseButton.addEventListener('click', () => {
-            if (audioPlayer.paused) {
-                audioPlayer.play();
-                playPauseButton.textContent = '我走';
-            } else {
-                audioPlayer.pause();
-                playPauseButton.textContent = '你走';
-            }
-        });
-    }
+    const yinyue_diz = '/BGM/yinyuediz.json';
+    
 }
 
 // export function gunlun() {
