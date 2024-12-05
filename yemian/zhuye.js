@@ -12,7 +12,9 @@ duqvmdwenjian().then(count => {
     let shuliang = count
     document.querySelector('#add').innerHTML = `
     <div id="zuobian" class="zuobian_yangshi">
+    <div class="touxing_kuangjia">
         <img class="touxing" src="../img/touxing.jpg">
+    </div>
         <div class="wenzhi">
             <span>文章篇幅：${shuliang}篇</span>
             <span>铭记：2016.6.6</span>

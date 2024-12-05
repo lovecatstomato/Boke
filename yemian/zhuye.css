@@ -14,10 +14,19 @@
     /*  */
 }
 
+
+/* 头像框架 */
+.touxing_kuangjia{
+    background-image: url(../img/touxiang_beijing.jpg);
+    background-size: cover;
+    border-radius: 8px 8px 0 0;
+}
+
 /* 头像 */
 .touxing {
     border-radius: 50%;
     margin: 10% 30%;
+    box-shadow: 0 0 0 6px #fff;
     width: 4.8em;
     height: 4.8em;
 }
@@ -58,7 +67,6 @@ body {
 /* 右边框架 */
 .youbian_yangshi {
     margin: 2vh 1vh;
-    /* height: 100px; */
     width: 42em;
     background: #4442;
     border-radius: 8px;
