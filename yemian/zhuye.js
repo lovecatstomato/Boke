@@ -38,11 +38,16 @@ duqvmdwenjian().then(count => {
         </div>
         <div class="yinyue_zhuti">
             <div>
-                <img class="yinyue_touxiang" src="../img/yinyue/zhuti.jpg" alt="Music Theme">
+                <img class="yinyue_touxiang" src="../img/zhuti.jpg" alt="Music Theme">
             </div>
             <div class="controls">
+                <audio id="audioPlayer" src="your-audio-file.mp3"></audio>
+                <div class="timeline-container">
+                    <div class="timeline-time" id="timelineTime">0:00</div>
+                    <div class="timeline-played" id="timelinePlayed"></div>
+                </div>
                 <img class="yinyue_tubiao prev" src="../img/yinyue/shangyiq.png" alt="Previous">
-                <img class="yinyue_tubiao play-pause" src="../img/yinyue/zhanting.png" alt="Play/Pause">
+                <img class="yinyue_tubiao play-pause" src="../img/yinyue/zhanting.png" alt="bofang/zhanting">
                 <img class="yinyue_tubiao next" src="../img/yinyue/xiayiq.png" alt="Next">
             </div>
         </div>

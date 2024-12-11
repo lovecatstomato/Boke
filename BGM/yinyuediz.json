@@ -1,8 +1,20 @@
 [
     {
         "id": 1,
+        "name": "Throwaway",
+        "url": "/BGM/Throwaway.mp3",
+        "time": "03:00"
+    },
+    {
+        "id": 2,
         "name": "你走",
         "url": "/BGM/nizou.mp3",
         "time": "4:21"
+    },
+    {
+        "id": 3,
+        "name": "穿越时空的思念",
+        "url": "/BGM/chuangyueshikong.mp3",
+        "time": "00:56"
     }
 ]

@@ -1,3 +1,5 @@
+// marked：一个将 Markdown 转换为 HTML 的库。
+// highlight.js（简写为hljs）：一个用于代码高亮显示的库。
 import { marked } from "marked";
 import hljs from "highlight.js";
 

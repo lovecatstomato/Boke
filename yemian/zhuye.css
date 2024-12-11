@@ -16,7 +16,7 @@
 
 
 /* 头像框架 */
-.touxing_kuangjia{
+.touxing_kuangjia {
     background-image: url(../img/touxiang_beijing.jpg);
     background-size: cover;
     border-radius: 8px 8px 0 0;
@@ -95,9 +95,9 @@ body {
 
 
 .wenbkuangjia:hover {
-    transform: scale(1.1);
+    transform: scale(0.9);
     /* 当鼠标悬停时，元素放大到原来的1.1倍 */
-    box-shadow: 0 2px 4px 2px #4442;
+    /* box-shadow: 0 2px 4px 2px #4442; */
 }
 
 .wenbkuangjia h2 {
@@ -271,14 +271,46 @@ body {
     width: 3.4em;
     position: relative;
     box-shadow: 0 0 0 6px #fff;
-    top: -12px;
+    top: -18px;
+    left: 5px;
 }
 
 /* 音乐按钮 */
 .yinyue_tubiao {
-    height: 1.8em;
-    width: 1.8em;
+    height: 1.4em;
+    width: 1.4em;
 }
+
+/* 自定义进度条容器 */
+.timeline-container {
+    display: flex;
+    width: 100%;
+    height: 8px;
+    background-color: #745656;
+    border-radius: 4px;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    position: relative;
+    top: -6px;
+}
+
+/* 已播放部分的进度条 */
+.timeline-played {
+    height: 100%;
+    width: 0;
+    /* 初始宽度为0 */
+    background-color: #76c7c0;
+    transition: width 0.1s;
+    /* 平滑的过渡效果 */
+}
+
+/* 时间显示 */
+.timeline-time {
+    position: relative;
+    top: -6px;
+    color: #0c0101;
+}
+
 
 /* 动画 */
 @keyframes circle {
