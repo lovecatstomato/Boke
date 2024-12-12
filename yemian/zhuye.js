@@ -12,13 +12,18 @@ duqvmdwenjian().then(count => {
     let shuliang = count
     document.querySelector('#add').innerHTML = `
     <div id="zuobian" class="zuobian_yangshi">
-    <div class="touxing_kuangjia">
-        <img class="touxing" src="../img/touxing.jpg">
-    </div>
+        <div class="sousuo_kuang">
+
+        </div>
+        <div class="touxing_kuangjia">
+            <img class="touxing" src="../img/touxing.jpg">
+        </div>
+        <div class="fenge_xian"></div>
         <div class="wenzhi">
             <span>文章篇幅：${shuliang}篇</span>
             <span>铭记：2016.6.6</span>
         </div>
+        <div class="fenge_xian"></div>
         <div class="shejiao">
             <div>
                 <a href="https://github.com/lovecatstomato">
@@ -35,7 +40,11 @@ duqvmdwenjian().then(count => {
                     <img border="0" class="shejiao_tubiao" src="../img/tubiao/bilibili.png">
                 </a>  
             </div>
+            <div>
+                <img border="0" class="shejiao_tubiao" src="../img/tubiao/youxiang.png">
+            </div>
         </div>
+        <div class="fenge_xian"></div>
         <div class="yinyue_zhuti">
             <div>
                 <img class="yinyue_touxiang" src="../img/zhuti.jpg" alt="Music Theme">
@@ -51,7 +60,6 @@ duqvmdwenjian().then(count => {
                 <img class="yinyue_tubiao next" src="../img/yinyue/xiayiq.png" alt="Next">
             </div>
         </div>
-        
     </div>
     <div id="youbian" class="youbian_yangshi">
         <div id="wenzhang" class="wenzhang">
