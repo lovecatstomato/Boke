@@ -170,25 +170,6 @@ body {
     outline: none;
 }
 
-/* 主题背景 */
-/* .zhuhti_beijing {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-image: url('/img/zhuti.jpg');
-    background-size: cover;
-    background-position: center;
-    z-index: 10;
-    transition: opacity 0.5s ease, transform 0.5s ease;
-} */
-
-/* .fade-out {
-    opacity: 0;
-    transform: scale(1.1);
-} */
-
 /* 媒体查询，当视口宽度小于600px时应用 */
 @media (max-width: 1000px) {
 
