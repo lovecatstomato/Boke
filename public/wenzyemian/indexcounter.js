@@ -6,7 +6,7 @@ import hljs from "highlight.js";
 const markdownFilePath = '/biji/bijiweiz.json'; // 注意这里的路径可能是相对于构建后的根目录
 
 export function mdduqv(chuanr) {
-    console.log(chuanr);
+    // console.log(chuanr);
     fetch(markdownFilePath).then(response => response.json()).then(data => {
         for (const item of data) {
             if (chuanr === item.name) {

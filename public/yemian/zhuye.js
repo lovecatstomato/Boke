@@ -6,7 +6,7 @@ import {
     yingyue,
     allDatas,
     allData
-} from './zhuycounter'
+} from './zhuycounter.js'
 
 duqvmdwenjian().then(count => {
     let shuliang = count
@@ -81,9 +81,9 @@ window.addEventListener('scroll', () => {
         const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
         const clientHeight = document.documentElement.clientHeight || document.body.clientHeight;
         const scrollHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
-        console.log(allDatas, allData.length);
+        // console.log(allDatas, allData.length);
 
-        console.log('加载', scrollTop, clientHeight, scrollHeight);
+        // console.log('加载', scrollTop, clientHeight, scrollHeight);
         if (scrollTop + clientHeight >= scrollHeight - 1) {
             // console.log(1);
 
